@@ -73,7 +73,6 @@ def main():
 
     print(f"Цель: {target}")
     print(f"Портов к сканированию: {len(ports)}")
-    print("-" * 60)
 
     start_time = time.time()
     open_ports = []
@@ -96,7 +95,6 @@ def main():
     queue.join()
 
     elapsed = time.time() - start_time
-    print("-" * 60)
     print(f"Сканирование завершено за {elapsed:.2f} секунд")
 
     if open_ports:
